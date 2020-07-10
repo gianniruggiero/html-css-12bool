@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-.container, [class*="col-"] {
+[class*="col-"] {
   border: 1px solid black;
 }
 
@@ -12,6 +12,7 @@
   height: 100%;
   background-color: pink;
   position: relative;
+  padding: 10px;
 }
 
 [class*="col-"] > p {
@@ -25,3 +26,18 @@
 .row {
   height: 300px;
 }
+
+/* .nested {
+  background-color: lightcoral;
+  border: 1px solid white;
+} */
+
+[class*="col-"] [class*="col-"] {
+  background-color: lightcoral;
+  border: 1px solid white;
+}
+
+/* .container .row:last-child .col-6 [class*="col-"] {
+  background-color: lightcoral;
+  border: 1px solid white;
+} */
